@@ -17,7 +17,7 @@ public class SequenceTest {
     private static final int RESULT_NUM = COUNT_NUM * THREAD_NUM - 1;
 
     @Test
-    public void スレッド2つからgetNextで重複した値を得るため値が2倍にならない() throws Exception {
+    public void スレッド2つからgetNextを呼び出しても値が重複しない() throws Exception {
 
         // SetUp
         Sequence sut = new Sequence();
